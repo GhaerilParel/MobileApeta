@@ -94,6 +94,7 @@
 
 
         <EditText
+            android:id="@+id/email2"
             android:layout_width="332dp"
             android:layout_height="46dp"
             android:background="@drawable/box3"
@@ -104,16 +105,18 @@
             tools:layout_editor_absoluteY="409dp" />
 
         <EditText
+            android:id="@+id/username"
             android:layout_width="332dp"
             android:layout_height="46dp"
             android:background="@drawable/box3"
-            android:hint="Password"
+            android:hint="Username"
             android:paddingLeft="20dp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="39dp"
             tools:layout_editor_absoluteY="468dp" />
 
         <EditText
+            android:id="@+id/password2"
             android:layout_width="332dp"
             android:layout_height="46dp"
             android:background="@drawable/box3"
@@ -124,11 +127,11 @@
             tools:layout_editor_absoluteY="524dp" />
 
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/btnsave"
             android:layout_width="332dp"
             android:layout_height="47dp"
             android:layout_marginTop="600dp"
-            android:background="@drawable/btn2"
+            android:backgroundTint="@color/green"
             android:fontFamily="@font/poppinssemibold"
             android:text="Masuk"
             app:layout_constraintTop_toTopOf="parent"
@@ -151,6 +154,7 @@
             app:layout_constraintVertical_bias="0.933" />
 
         <TextView
+            android:id="@+id/keLogin"
             android:layout_width="131dp"
             android:layout_height="23dp"
             android:fontFamily="@font/poppinssemibold"
