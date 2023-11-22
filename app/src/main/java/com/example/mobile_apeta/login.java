@@ -79,7 +79,7 @@ public class login extends AppCompatActivity {
         // Melakukan hashing password menggunakan MD5
         String hashedPassword = md5(plainPassword);
 
-        String urlEndPoints = "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-drzkm/endpoint/getPenggunaByUsernamePassword?email=" + email.getText().toString() + "&password=" + hashedPassword;
+        String urlEndPoints = "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-drzkm/endpoint/getPenggunaByEmailPassword?email=" + email.getText().toString() + "&password=" + hashedPassword;
 
         StringRequest sr = new StringRequest(
                 Request.Method.GET,
