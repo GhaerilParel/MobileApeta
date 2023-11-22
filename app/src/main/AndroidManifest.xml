@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Mobile_Apeta"
         tools:targetApi="31">
         <activity
-            android:name=".home"
+            android:name=".keranjang"
             android:exported="false" />
         <activity
             android:name=".produk_details"
@@ -50,7 +50,7 @@
             android:name=".tampilan_awal"
             android:exported="false" />
         <activity
-            android:name=".keranjang"
+            android:name=".home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
