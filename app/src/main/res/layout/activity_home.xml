@@ -21,8 +21,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="350dp"
-                android:layout_height="240dp"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/tampilan_home" />
@@ -31,7 +31,7 @@
                 android:id="@+id/btn_psn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="100dp"
                 android:layout_marginTop="20dp"
                 android:text="Pesan Sekarang" />
 
@@ -40,7 +40,7 @@
                 android:layout_height="74dp"
                 android:background="@drawable/logo"
                 android:layout_marginTop="60dp"
-                android:layout_marginLeft="170dp"
+                android:layout_marginLeft="140dp"
                 />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:fontFamily="@font/playfair_bold"
                 android:textSize="30sp"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="145dp"
+                android:layout_marginLeft="110dp"
                 />
 
             <GridLayout

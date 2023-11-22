@@ -16,15 +16,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="380dp"
+            android:id="@+id/textView"
+            android:layout_width="340dp"
             android:layout_height="634dp"
             android:background="@drawable/box2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.835" />
+            android:layout_marginTop="60dp" />
 
         <TextView
             android:layout_width="113dp"
@@ -59,12 +59,13 @@
             android:text="Selamat Datang"
             android:textColor="@color/green"
             android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.163"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.155" />
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            android:layout_marginRight="130dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:layout_width="221dp"
@@ -78,9 +79,11 @@
             app:layout_constraintHorizontal_bias="0.163"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.215" />
+            app:layout_constraintVertical_bias="0.215"
+            android:layout_marginLeft="8dp"/>
 
         <TextView
+            android:id="@+id/textView6"
             android:layout_width="230dp"
             android:layout_height="180dp"
             android:layout_marginTop="80dp"
@@ -95,41 +98,50 @@
 
         <EditText
             android:id="@+id/email2"
-            android:layout_width="332dp"
+            android:layout_width="302dp"
             android:layout_height="46dp"
             android:background="@drawable/box3"
             android:hint="Email"
             android:paddingLeft="20dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="409dp" />
+            app:layout_constraintBottom_toTopOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="332dp"
+            android:layout_width="302dp"
             android:layout_height="46dp"
             android:background="@drawable/box3"
             android:hint="Username"
             android:paddingLeft="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/password2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="468dp" />
+            android:layout_marginTop="70dp"
+            />
 
         <EditText
             android:id="@+id/password2"
-            android:layout_width="332dp"
+            android:layout_width="302dp"
             android:layout_height="46dp"
             android:background="@drawable/box3"
             android:hint="Password"
             android:paddingLeft="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnsave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="524dp" />
+            android:layout_marginTop="120dp"
+            />
 
         <Button
             android:id="@+id/btnsave"
-            android:layout_width="332dp"
-            android:layout_height="47dp"
+            android:layout_width="302dp"
+            android:layout_height="46dp"
             android:layout_marginTop="600dp"
             android:backgroundTint="@color/green"
             android:fontFamily="@font/poppinssemibold"
@@ -166,6 +178,7 @@
             app:layout_constraintHorizontal_bias="0.857"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.933" />
+            app:layout_constraintVertical_bias="0.933"
+            android:paddingLeft="25dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
