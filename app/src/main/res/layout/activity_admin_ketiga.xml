@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_ketiga">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="361dp"
+        android:layout_height="561dp"
+        android:background="@drawable/box2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:background="@drawable/box4"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:text="Atur Informasi Toko"
+        android:paddingTop="10dp"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="103dp"
+        android:background="@drawable/box4"
+        android:fontFamily="@font/poppinssemibold"
+        android:paddingTop="35dp"
+        android:text="+ Tambahkan Foto Produk"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppinssemibold"
+        android:paddingTop="10dp"
+        android:text="Upload Produk"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+
+
+    <TextView
+        android:layout_width="113dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Daftar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:background="@drawable/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+
+    <EditText
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:background="@drawable/box3"
+        android:hint="Deskripsi Produk"
+        android:paddingLeft="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <EditText
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:background="@drawable/box3"
+        android:hint="Nama Produk"
+        android:paddingLeft="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <TextView
+        android:layout_width="113dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Deskripsi Produk"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:layout_width="113dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Nama Produk"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <TextView
+        android:layout_width="334dp"
+        android:layout_height="168dp"
+        android:background="@drawable/box3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:background="@drawable/box3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="492dp"
+        android:id="@+id/spn1"/>
+
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:background="@drawable/box3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="545dp"
+        android:id="@+id/spn2"/>
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:background="@drawable/box3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="595dp"
+        android:id="@+id/spn3"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="150dp"
+        android:layout_marginTop="670dp"
+        android:layout_marginRight="180dp"
+        android:layout_height="47dp"
+        android:background="@drawable/btn2"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Simpan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="150dp"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="180dp"
+        android:layout_height="47dp"
+        android:background="@drawable/btn2"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Tampilkan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
