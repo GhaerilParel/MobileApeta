@@ -16,6 +16,12 @@
         android:id="@+id/market"
         android:icon="@drawable/baseline_table_chart_24"
         android:title="Market"/>
+
+    <item
+        android:id="@+id/keranjang"
+        android:icon="@drawable/baseline_shopping_cart_checkout_24"
+        android:title="Keranjang"/>
+
     <item
         android:id="@+id/profil"
         android:icon="@drawable/profil"
