@@ -12,9 +12,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,14 +83,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/egg"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/egg" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Ayam" />
                     </LinearLayout>
@@ -115,14 +116,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/cow"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/cow" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Sapi" />
                     </LinearLayout>
@@ -148,14 +149,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/goatmilk"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/goatmilk" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Susu Kambing" />
                     </LinearLayout>
@@ -181,14 +182,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/egg2"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/egg2" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Telur" />
                     </LinearLayout>
@@ -219,9 +220,9 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Kambing" />
                     </LinearLayout>
@@ -247,14 +248,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/dagingkambing"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/dagingkambing" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Daging Kambing" />
                     </LinearLayout>
@@ -280,14 +281,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/cowmilk"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/cowmilk" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Susu Sapi" />
                     </LinearLayout>
@@ -313,14 +314,14 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/dagingayam"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/dagingayam" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Daging Ayam" />
                     </LinearLayout>
@@ -346,19 +347,54 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/dagingsapi"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/dagingsapi" />
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Daging Sapi" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
+
+<!--            <TextView-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/btn2" />-->
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="210dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/assethome" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/playfair_bold"
+                android:text="PURE FARM FOOD"
+                android:textColor="@color/grey1"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/playfair_bold"
+                android:text="EVERY FARM FOOD "
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:background="@color/white" />
         </LinearLayout>
     </ScrollView>
 

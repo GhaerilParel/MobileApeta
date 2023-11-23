@@ -17,13 +17,19 @@
         android:theme="@style/Theme.Mobile_Apeta"
         tools:targetApi="31">
         <activity
+            android:name=".profil_mitra"
+            android:exported="false" />
+        <activity
+            android:name=".ubah_profil"
+            android:exported="false" />
+        <activity
             android:name=".keranjang"
             android:exported="false" />
         <activity
             android:name=".produk_details"
             android:exported="false" />
         <activity
-            android:name=".ubah_profil"
+            android:name=".home"
             android:exported="false" />
         <activity
             android:name=".admin_keempat"
@@ -50,7 +56,7 @@
             android:name=".tampilan_awal"
             android:exported="false" />
         <activity
-            android:name=".home"
+            android:name=".market"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
