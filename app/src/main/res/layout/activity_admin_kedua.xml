@@ -103,6 +103,7 @@
         app:layout_constraintVertical_bias="0.215" />
 
     <EditText
+        android:id="@+id/namaToko"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -131,7 +132,7 @@
         app:layout_constraintVertical_bias="0.36" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/alamatToko"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -160,6 +161,7 @@
         app:layout_constraintVertical_bias="0.505" />
 
     <EditText
+        android:id="@+id/teleponToko"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -189,6 +191,7 @@
 
 
     <EditText
+        android:id="@+id/emailToko"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -200,7 +203,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btnback"
         android:layout_width="150dp"
         android:layout_marginTop="700dp"
         android:layout_marginRight="180dp"
@@ -213,7 +216,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/btnnext"
         android:layout_width="150dp"
         android:layout_marginTop="700dp"
         android:layout_marginLeft="180dp"
