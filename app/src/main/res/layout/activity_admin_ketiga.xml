@@ -104,7 +104,7 @@
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/deskripsiProduk"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -116,6 +116,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
+        android:id="@+id/namaProduk"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -183,7 +184,7 @@
 
 
     <EditText
-        android:id="@+id/spn2"
+        android:id="@+id/hargaProduk"
         android:layout_width="280dp"
         android:layout_height="36dp"
         android:background="@drawable/box3"
@@ -198,7 +199,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/simpanProduk"
         android:layout_width="150dp"
         android:layout_marginTop="700dp"
         android:layout_marginRight="180dp"
