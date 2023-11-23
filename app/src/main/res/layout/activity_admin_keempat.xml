@@ -17,8 +17,9 @@
 
 
     <TextView
-        android:layout_width="361dp"
-        android:layout_height="561dp"
+        android:id="@+id/textView15"
+        android:layout_width="341dp"
+        android:layout_height="581dp"
         android:background="@drawable/box2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +46,7 @@
 
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="313dp"
         android:layout_height="136dp"
         android:background="@drawable/box"
@@ -62,20 +64,28 @@
     <Button
         android:layout_width="153dp"
         android:layout_height="48dp"
-        android:background="@drawable/btn2"
+        android:backgroundTint="@color/green"
         android:text="Selesaikan"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="221dp" />
+        android:layout_marginLeft="140dp"/>
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="184dp"
         android:layout_height="21dp"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/poppinsregular"
         android:text="Upload Produk ke tokomu"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:layout_marginRight="100dp"/>
 
     <TextView
         android:layout_width="210dp"
@@ -120,33 +130,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.053" />
 
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="150dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginRight="180dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/green"
+        android:text="Kembali"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-<!--    <Button-->
-<!--        android:id="@+id/btn8"-->
-<!--        android:layout_width="158dp"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:background="@drawable/btn2"-->
-<!--        android:fontFamily="@font/poppinssemibold"-->
-<!--        android:text="Kembali"-->
-<!--        app:layout_constraint="parent"-->
-<!--        app:layout_constraintEnd_toEnd0f="parent"-->
-<!--        app:layout_constraintStart_toStart0f="parent"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="39dp"-->
-<!--        tools:layout_editor_absoluteY="677dp" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn9"-->
-<!--        android:layout_width="158dp"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:background="@drawable/btn2"-->
-<!--        android:fontFamily="@font/poppinssemibold"-->
-<!--        android:text="Lanjut"-->
-<!--        app:layout_constraint="parent"-->
-<!--        app:layout_constraintEnd_toEnd0f="parent"-->
-<!--        app:layout_constraintStart_toStart0f="parent"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="213dp"-->
-<!--        tools:layout_editor_absoluteY="677dp" />-->
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="150dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="180dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="kirim"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
