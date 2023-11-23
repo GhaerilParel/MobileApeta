@@ -159,7 +159,7 @@
     <TextView
         android:id="@+id/textView9"
         android:layout_width="304dp"
-        android:layout_height="168dp"
+        android:layout_height="118dp"
         android:background="@drawable/box3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,32 +172,25 @@
         android:id="@+id/spn1"
         android:layout_width="280dp"
         android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/box3"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
-        tools:ignore="MissingConstraints"
-        android:layout_marginBottom="100dp"/>
-
-
-    <Spinner
-        android:id="@+id/spn2"
-        android:layout_width="280dp"
-        android:layout_height="36dp"
-        android:background="@drawable/box3"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintBottom_toTopOf="@+id/spn2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView9"
         tools:ignore="MissingConstraints" />
 
-    <Spinner
-        android:id="@+id/spn3"
+
+    <EditText
+        android:id="@+id/spn2"
         android:layout_width="280dp"
         android:layout_height="36dp"
-        android:layout_marginTop="100dp"
         android:background="@drawable/box3"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Harga"
+        android:textColor="@color/grey1"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
