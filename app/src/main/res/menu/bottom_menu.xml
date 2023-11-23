@@ -26,7 +26,4 @@
         android:id="@+id/profil"
         android:icon="@drawable/profil"
         android:title="Profil"/>
-
-
-
 </menu>
