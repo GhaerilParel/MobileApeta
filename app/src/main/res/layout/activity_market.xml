@@ -51,7 +51,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:paddingEnd="8dp"
-                    tools:listitem="" />
+                    tools:listitem="@layout/list_market" />
 
                 <!-- RecyclerView for Product B -->
                 <androidx.recyclerview.widget.RecyclerView
@@ -59,7 +59,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:paddingStart="8dp" />
+                    android:paddingStart="8dp"
+                    tools:listitem="@layout/list_market"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -24,17 +24,6 @@
         tools:ignore="MissingConstraints"
         android:drawableLeft="@drawable/left"/>
 
-    <TextView
-        android:layout_width="20dp"
-        android:layout_height="15dp"
-        android:background="@drawable/left"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="@+id/textView16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView16"
-        android:layout_marginRight="300dp"
-        tools:ignore="MissingConstraints" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
