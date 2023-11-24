@@ -101,7 +101,7 @@ public class admin_ketiga extends AppCompatActivity {
 
                         } catch (JSONException e) {
 //                            Log.e("Registration", "Error parsing JSON: " + e.getMessage());
-////                            Toast.makeText(SignUp.this, "Registration failed! Error parsing JSON", Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(SignUp.this, "Registration failed! Error parsing JSON", Toast.LENGTH_SHORT).show();
                         }
 
                         Toast.makeText(admin_ketiga.this, "Toko Berhasil Terdaftar!", Toast.LENGTH_SHORT).show();
