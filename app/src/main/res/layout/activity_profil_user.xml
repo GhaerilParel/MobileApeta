@@ -4,187 +4,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".ubah_profil">
+    tools:context=".profil_user">
 
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/btn5"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/btn_krg"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="90dp"/>
-
-            <TextView
+            <ImageView
                 android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Pilih Gambar"
-                android:textColor="@color/grey1"
-                android:paddingLeft="34dp"
-                android:paddingTop="13dp"
-                android:layout_marginLeft="100dp"
-                android:background="@drawable/box3"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/btn_krg2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="40dp"
-                />
+                android:fontFamily="@font/poppinsbold"
+                android:text="Ghaeril Juniawan"
+                android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/textView19"
-                android:layout_width="113dp"
-                android:layout_height="29dp"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="Username"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                android:layout_marginLeft="27dp"/>
-
-            <EditText
-                android:layout_width="302dp"
-                android:layout_height="46dp"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/box3"
-                android:paddingLeft="20dp"
-                android:text="" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="113dp"
-                android:layout_height="29dp"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="Nama"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                android:layout_marginLeft="27dp"/>
-
-            <EditText
-                android:layout_width="302dp"
-                android:layout_height="46dp"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/box3"
-                android:paddingLeft="20dp"
-                android:text="" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppinsregular"
+                android:text="ghaerilparel"
+                android:textColor="@color/grey1"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/textView21"
                 android:layout_width="113dp"
                 android:layout_height="29dp"
+                android:layout_marginLeft="34dp"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="E-mail"
                 android:textColor="@color/black"
-                android:textSize="12sp"
-                android:layout_marginLeft="27dp" />
+                android:textSize="12sp" />
 
-            <EditText
+            <TextView
                 android:layout_width="302dp"
                 android:layout_height="46dp"
-                android:layout_marginLeft="15dp"
                 android:background="@drawable/box3" />
 
             <TextView
                 android:id="@+id/textView22"
                 android:layout_width="113dp"
                 android:layout_height="29dp"
+                android:layout_marginLeft="20dp"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="No Telepon"
                 android:textColor="@color/black"
-                android:textSize="12sp"
-                android:layout_marginLeft="27dp"/>
+                android:textSize="12sp" />
 
-            <EditText
+            <TextView
                 android:layout_width="302dp"
                 android:layout_height="46dp"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/box3"
-                />
+                android:background="@drawable/box3" />
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="113dp"
                 android:layout_height="29dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="Jenis Kelamin"
                 android:textColor="@color/black"
-                android:textSize="12sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="27dp"/>
+                android:textSize="12sp" />
 
-            <RadioButton
+            <TextView
+                android:layout_width="302dp"
+                android:layout_height="46dp"
+                android:background="@drawable/box3" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:onClick="chechkButtom"
-                android:text="Perempuan"
+                android:text=""
                 tools:layout_editor_absoluteX="143dp"
-                tools:layout_editor_absoluteY="521dp" />
+                tools:layout_editor_absoluteY="521dp"/>
 
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:onClick="chechkButtom"
-                android:text="Laki-Laki"
-                tools:layout_editor_absoluteX="42dp"
-                tools:layout_editor_absoluteY="521dp" />
             <TextView
                 android:id="@+id/textView23"
                 android:layout_width="113dp"
                 android:layout_height="29dp"
+                android:layout_marginLeft="14dp"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="Tanggal Lahir"
                 android:textColor="@color/black"
-                android:textSize="12sp"
-                android:layout_marginLeft="27dp"/>
+                android:textSize="12sp" />
 
-            <EditText
+            <TextView
                 android:layout_width="140dp"
                 android:layout_height="46dp"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/box3"/>
-
-            <Button
-                android:layout_width="140dp"
-                android:layout_height="60dp"
-                android:text="Simpan"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="210dp"
-                android:backgroundTint="@color/green"
-                android:fontFamily="@font/poppinssemibold"/>
+                android:background="@drawable/box3" />
 
             <TextView
                 android:layout_width="50dp"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:background="@color/white" />
-
         </LinearLayout>
+
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        tools:ignore="MissingConstraints"
-        android:background="@color/white">
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView17"
             android:layout_width="20dp"
             android:layout_height="15dp"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/left_white"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.099"
@@ -193,22 +151,37 @@
             app:layout_constraintVertical_bias="0.036" />
 
         <TextView
-            android:layout_width="284dp"
+            android:layout_width="99dp"
             android:layout_height="26dp"
-            android:fontFamily="@font/poppinssemibold"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="26dp"
+            android:fontFamily="@font/poppinsbold"
             android:paddingLeft="30dp"
-            android:text="Ubah Profil"
-            android:textColor="@color/black"
-            android:textSize="13sp"
+            android:text="Profil"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.614"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.036" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/baseline_mode_edit_outline_24" />
     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/manual_bottom_navigation"
@@ -270,5 +243,6 @@
             android:background="@drawable/profil" />
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

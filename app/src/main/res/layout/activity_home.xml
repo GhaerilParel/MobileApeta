@@ -393,52 +393,69 @@
 
             <TextView
                 android:layout_width="50dp"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:background="@color/white" />
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout
         android:id="@+id/manual_bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="362dp"
+        android:layout_height="58dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/btn3"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
 
-        <!-- Contoh tombol atau ikon -->
+        <!-- Button 1 -->
         <ImageButton
-            android:id="@+id/home_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/home"
-            android:contentDescription="Home" />
+            android:id="@+id/button1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/home" />
 
+        <!-- Button 2 -->
         <ImageButton
-            android:id="@+id/mitra_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/mitra2"
-            android:contentDescription="Mitra" />
+            android:id="@+id/button2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button1"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/mitra2" />
 
+        <!-- Button 3 -->
         <ImageButton
-            android:id="@+id/market_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/baseline_table_chart_24"
-            android:contentDescription="Market" />
+            android:id="@+id/button3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button2"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/baseline_table_chart_24" />
 
+        <!-- Button 4 -->
         <ImageButton
-            android:id="@+id/profil_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/profil"
-            android:contentDescription="Profil" />
+            android:id="@+id/button4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button3"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/baseline_shopping_cart_checkout_24" />
+
+        <!-- Button 5 -->
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button4"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/profil" />
 
     </LinearLayout>
 
