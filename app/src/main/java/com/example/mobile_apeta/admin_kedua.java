@@ -48,6 +48,7 @@ public class admin_kedua extends AppCompatActivity {
         btn_lanjut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences sharedPreferences = getSharedPreferences("TokoData", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("email", emailToko.getText().toString());
                 editor.putString("nama", namaToko.getText().toString());
@@ -105,10 +106,10 @@ public class admin_kedua extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<>();
-                params.put("namaToko", namaToko.getText().toString());
-                params.put("alamatToko", alamatToko.getText().toString());
-                params.put("teleponToko", teleponToko.getText().toString());
-                params.put("emailToko", emailToko.getText().toString());
+                params.put("nama_toko", namaToko.getText().toString());
+                params.put("alamat_toko", alamatToko.getText().toString());
+                params.put("no_tlpn", teleponToko.getText().toString());
+                params.put("email_toko", emailToko.getText().toString());
                 return params;
             }
         };

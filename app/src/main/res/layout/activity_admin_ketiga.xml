@@ -104,7 +104,7 @@
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/deskripsiProduk"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -116,6 +116,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
+        android:id="@+id/namaProduk"
         android:layout_width="302dp"
         android:layout_height="46dp"
         android:background="@drawable/box3"
@@ -169,13 +170,12 @@
         app:layout_constraintVertical_bias="0.85" />
 
     <Spinner
-        android:id="@+id/spn1"
+        android:id="@+id/spinnerKategori"
         android:layout_width="280dp"
         android:layout_height="36dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/box3"
-        app:layout_constraintBottom_toTopOf="@+id/spn2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView9"
@@ -183,7 +183,7 @@
 
 
     <EditText
-        android:id="@+id/spn2"
+        android:id="@+id/hargaProduk"
         android:layout_width="280dp"
         android:layout_height="36dp"
         android:background="@drawable/box3"
@@ -198,7 +198,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/simpanProduk"
         android:layout_width="150dp"
         android:layout_marginTop="700dp"
         android:layout_marginRight="180dp"

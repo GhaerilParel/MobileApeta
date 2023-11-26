@@ -41,7 +41,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="360dp"
-                android:layout_height="683dp"
+                android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_rowWeight="1"
                 android:layout_column="0"
@@ -59,6 +59,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/gambar"
                         android:layout_width="246dp"
                         android:layout_height="263dp"
                         android:paddingTop="10dp"
@@ -66,6 +67,7 @@
                         android:src="@drawable/egg" />
 
                     <TextView
+                        android:id="@+id/namaProduk2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
@@ -76,6 +78,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/hargaProduk2"
                         android:layout_width="150dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="50dp"
@@ -89,6 +92,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/namaToko3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="80dp"
@@ -106,10 +110,11 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
-                            android:text="Stok           :" />
+                            android:text="Deskripsi:" />
 
                         <TextView
-                            android:layout_width="70dp"
+                            android:id="@+id/deskripsiProduk2"
+                            android:layout_width="155dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
@@ -118,7 +123,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="134dp"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <TextView
@@ -129,13 +134,37 @@
                             android:text="Kategori  :" />
 
                         <TextView
+                            android:id="@+id/jenisProduk"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/poppinssemibold"
                             android:text="Hewan" />
                     </LinearLayout>
-
+                    <EditText
+                        android:id="@+id/quantityEditText"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:background="@color/green"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/buyButton"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bottom_navbar"
+                        android:padding="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Beli"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

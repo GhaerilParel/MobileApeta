@@ -27,15 +27,17 @@
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/tampilan_home" />
 
-            <SearchView
+            <EditText
+                android:id="@+id/searchProduk"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:iconifiedByDefault="false"
                 android:layout_marginLeft="15dp"
-                android:queryHint="Cari Apaan?"
+                android:hint="Cari Apaan?"
                 android:queryBackground="@color/green"
                 android:background="@drawable/btn6"
                 android:layout_marginBottom="20dp"
+                android:padding="10dp"
                 />
 
             <LinearLayout
@@ -49,7 +51,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:paddingEnd="8dp"
-                    tools:listitem="" />
+                    tools:listitem="@layout/list_market" />
 
                 <!-- RecyclerView for Product B -->
                 <androidx.recyclerview.widget.RecyclerView
@@ -57,7 +59,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:paddingStart="8dp" />
+                    android:paddingStart="8dp"
+                    tools:listitem="@layout/list_market"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
