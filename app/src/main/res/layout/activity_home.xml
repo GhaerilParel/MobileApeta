@@ -369,6 +369,7 @@
 <!--                android:background="@drawable/btn2" />-->
 
             <TextView
+                android:id="@+id/btn_homebar"
                 android:layout_width="280dp"
                 android:layout_height="210dp"
                 android:layout_marginLeft="35dp"
@@ -390,6 +391,15 @@
                 android:fontFamily="@font/playfair_bold"
                 android:text="EVERY FARM FOOD "
                 android:textSize="30dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Chatbot"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/green"
+                android:layout_marginLeft="100dp"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -419,7 +429,7 @@
 
         <!-- Button 2 -->
         <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/btn_mitra"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button1"
@@ -429,7 +439,7 @@
 
         <!-- Button 3 -->
         <ImageButton
-            android:id="@+id/button3"
+            android:id="@+id/btn_market"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button2"
@@ -439,7 +449,7 @@
 
         <!-- Button 4 -->
         <ImageButton
-            android:id="@+id/button4"
+            android:id="@+id/btn_keranjang"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button3"
@@ -449,13 +459,13 @@
 
         <!-- Button 5 -->
         <ImageButton
-            android:id="@+id/button5"
+            android:id="@+id/btn_profil"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button4"
             android:layout_marginStart="44dp"
             android:layout_marginTop="13dp"
-            android:background="@drawable/profil" />
+            android:background="@drawable/profil"/>
 
     </LinearLayout>
 

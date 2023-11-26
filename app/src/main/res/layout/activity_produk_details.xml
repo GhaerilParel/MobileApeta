@@ -23,13 +23,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:background="@drawable/tampilan_produk"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="30dp"/>
-
-            <TextView
                 android:layout_width="204dp"
                 android:layout_height="30dp"
                 android:fontFamily="@font/playfair_bold"
@@ -64,7 +57,7 @@
                         android:layout_height="263dp"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:src="@drawable/egg" />
+                        android:src="@drawable/logo" />
 
                     <TextView
                         android:id="@+id/namaProduk2"
@@ -151,7 +144,8 @@
                         android:padding="5dp"
                         android:background="@color/green"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:inputType="number"/>
                     <TextView
                         android:id="@+id/buyButton"
                         android:layout_width="150dp"
@@ -165,6 +159,11 @@
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:background="@color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -229,6 +228,7 @@
             android:layout_marginStart="44dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/profil" />
+
 
     </LinearLayout>
 

@@ -22,6 +22,15 @@ public class ProdukAdapter extends RecyclerView.Adapter<ProdukAdapter.ViewHolder
 
     private List<ProdukModels> produkList;
     private Context context;
+    private OnItemClickListener mListener;
+
+    public interface OnItemClickListener {
+        void onItemClick(ProdukModels clickedProduk);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
 
     public ProdukAdapter(List<ProdukModels> produkList, Context context) {
         this.produkList = produkList;
@@ -49,6 +58,14 @@ public class ProdukAdapter extends RecyclerView.Adapter<ProdukAdapter.ViewHolder
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (mListener != null) {
+                    mListener.onItemClick(produk);
+                }
+            }
+        });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 // Handle item click here, if necessary
                 ProdukModels clickedProduk = produkList.get(holder.getAdapterPosition());
                 showProductDetails(clickedProduk);
@@ -63,6 +80,9 @@ public class ProdukAdapter extends RecyclerView.Adapter<ProdukAdapter.ViewHolder
         intent.putExtra("productName", clickedProduk.getNama_produk());
         intent.putExtra("productPrice", clickedProduk.getHarga_produk());
         intent.putExtra("tokoName", clickedProduk.getNama_toko());
+        intent.putExtra("productDescription", clickedProduk.getDeskripsi_produk());
+        // Add any other data you want to pass
+
         context.startActivity(intent);
     }
 

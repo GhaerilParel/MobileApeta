@@ -78,7 +78,10 @@ public class admin_kedua extends AppCompatActivity {
                                 boolean success = jsonResponse.getBoolean("success");
 
                                 if (success) {
-                                    ///.....
+                                    SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                                    editor.putBoolean("isRegistered", true);
+                                    editor.apply();
                                 }
                             } else {
                                 Log.e("Regist Toko", "Unexpected response format: " + response);
@@ -89,7 +92,10 @@ public class admin_kedua extends AppCompatActivity {
 //                            Log.e("Registration", "Error parsing JSON: " + e.getMessage());
 ////                            Toast.makeText(SignUp.this, "Registration failed! Error parsing JSON", Toast.LENGTH_SHORT).show();
                         }
-
+                        SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putBoolean("isRegistered", true);
+                        editor.apply();
                         Toast.makeText(admin_kedua.this, "Toko Berhasil Terdaftar!", Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(admin_kedua.this, admin_ketiga.class);
                         startActivity(i);

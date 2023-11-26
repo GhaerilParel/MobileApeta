@@ -53,12 +53,14 @@
                 android:layout_marginLeft="27dp"/>
 
             <EditText
-                android:layout_width="302dp"
-                android:layout_height="46dp"
+                android:id="@+id/ubahUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
+                android:layout_marginRight="90dp"
                 android:background="@drawable/box3"
-                android:paddingLeft="20dp"
-                android:text="" />
+                android:padding="10dp"
+                />
 
             <TextView
                 android:id="@+id/textView20"
@@ -71,12 +73,13 @@
                 android:layout_marginLeft="27dp"/>
 
             <EditText
-                android:layout_width="302dp"
-                android:layout_height="46dp"
+                android:id="@+id/ubahNama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
+                android:layout_marginRight="90dp"
                 android:background="@drawable/box3"
-                android:paddingLeft="20dp"
-                android:text="" />
+                android:padding="10dp" />
 
             <TextView
                 android:id="@+id/textView21"
@@ -89,10 +92,13 @@
                 android:layout_marginLeft="27dp" />
 
             <EditText
-                android:layout_width="302dp"
-                android:layout_height="46dp"
+                android:id="@+id/ubahEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/box3" />
+                android:layout_marginRight="90dp"
+                android:background="@drawable/box3"
+                android:padding="10dp" />
 
             <TextView
                 android:id="@+id/textView22"
@@ -105,10 +111,13 @@
                 android:layout_marginLeft="27dp"/>
 
             <EditText
-                android:layout_width="302dp"
-                android:layout_height="46dp"
+                android:id="@+id/ubahNoHp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
+                android:layout_marginRight="90dp"
                 android:background="@drawable/box3"
+                android:padding="10dp"
                 />
 
             <TextView
@@ -122,23 +131,26 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="27dp"/>
 
-            <RadioButton
-                android:layout_width="match_parent"
+            <RadioGroup
+                android:id="@+id/radioGroupJenisKelamin"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:onClick="chechkButtom"
-                android:text="Perempuan"
-                tools:layout_editor_absoluteX="143dp"
-                tools:layout_editor_absoluteY="521dp" />
+                android:layout_marginLeft="15dp">
 
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:onClick="chechkButtom"
-                android:text="Laki-Laki"
-                tools:layout_editor_absoluteX="42dp"
-                tools:layout_editor_absoluteY="521dp" />
+                <RadioButton
+                    android:id="@+id/lakilaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-Laki" />
+
+                <RadioButton
+                    android:id="@+id/perempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView23"
                 android:layout_width="113dp"
@@ -150,12 +162,25 @@
                 android:layout_marginLeft="27dp"/>
 
             <EditText
-                android:layout_width="140dp"
-                android:layout_height="46dp"
+                android:id="@+id/ubahTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/box3"/>
+                android:layout_marginRight="90dp"
+                android:background="@drawable/box3"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/IdData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="90dp"
+                android:background="@color/white"
+                android:padding="10dp" />
 
             <Button
+                android:id="@+id/btn_edit"
                 android:layout_width="140dp"
                 android:layout_height="60dp"
                 android:text="Simpan"
@@ -222,7 +247,7 @@
 
         <!-- Button 1 -->
         <ImageButton
-            android:id="@+id/button1"
+            android:id="@+id/homebar6"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
@@ -231,7 +256,7 @@
 
         <!-- Button 2 -->
         <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/btn_mitra6"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button1"
@@ -241,7 +266,7 @@
 
         <!-- Button 3 -->
         <ImageButton
-            android:id="@+id/button3"
+            android:id="@+id/btn_market6"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button2"
@@ -251,7 +276,7 @@
 
         <!-- Button 4 -->
         <ImageButton
-            android:id="@+id/button4"
+            android:id="@+id/btn_keranjang6"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button3"
@@ -261,13 +286,13 @@
 
         <!-- Button 5 -->
         <ImageButton
-            android:id="@+id/button5"
+            android:id="@+id/btn_profil6"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button4"
             android:layout_marginStart="44dp"
             android:layout_marginTop="13dp"
-            android:background="@drawable/profil" />
+            android:background="@drawable/profil"/>
 
     </LinearLayout>
 

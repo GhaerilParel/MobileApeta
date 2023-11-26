@@ -33,9 +33,10 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/btn_krg2"/>
+                android:src="@drawable/logo"/>
 
             <TextView
+                android:id="@+id/namaUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -45,6 +46,7 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/namaUser2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -64,8 +66,13 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:layout_width="302dp"
-                android:layout_height="46dp"
+                android:padding="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:id="@+id/emailUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
                 android:background="@drawable/box3" />
 
             <TextView
@@ -79,8 +86,13 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:layout_width="302dp"
-                android:layout_height="46dp"
+                android:padding="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:id="@+id/noHpUser"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/box3" />
 
             <TextView
@@ -95,8 +107,13 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:layout_width="302dp"
-                android:layout_height="46dp"
+                android:padding="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:id="@+id/jenisKelamin"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/box3" />
 
             <TextView
@@ -114,13 +131,27 @@
                 android:layout_marginLeft="14dp"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="Tanggal Lahir"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="46dp"
+                android:padding="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:id="@+id/tanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
                 android:background="@drawable/box3" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FF0000"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -168,6 +199,7 @@
             app:layout_constraintVertical_bias="0.036" />
 
         <TextView
+            android:id="@+id/editProfile"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="80dp"
@@ -195,7 +227,7 @@
 
         <!-- Button 1 -->
         <ImageButton
-            android:id="@+id/button1"
+            android:id="@+id/homebar3"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
@@ -204,7 +236,7 @@
 
         <!-- Button 2 -->
         <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/btn_mitra3"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button1"
@@ -214,7 +246,7 @@
 
         <!-- Button 3 -->
         <ImageButton
-            android:id="@+id/button3"
+            android:id="@+id/btn_market3"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button2"
@@ -224,7 +256,7 @@
 
         <!-- Button 4 -->
         <ImageButton
-            android:id="@+id/button4"
+            android:id="@+id/btn_keranjang3"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button3"
@@ -234,13 +266,13 @@
 
         <!-- Button 5 -->
         <ImageButton
-            android:id="@+id/button5"
+            android:id="@+id/btn_profil3"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button4"
             android:layout_marginStart="44dp"
             android:layout_marginTop="13dp"
-            android:background="@drawable/profil" />
+            android:background="@drawable/profil"/>
 
     </LinearLayout>
 

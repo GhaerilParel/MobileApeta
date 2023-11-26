@@ -2,8 +2,6 @@ package com.example.mobile_apeta;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,7 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -30,7 +27,7 @@ import org.json.JSONObject;
 
 public class keranjang extends AppCompatActivity {
     private Spinner metodePembayaran;
-    private String no_hp, alamatt;
+    private String no_hp, username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,9 +54,8 @@ public class keranjang extends AppCompatActivity {
 
         // Get username from SharedPreferences
         SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
-        String username = sharedPreferences.getString("username", "");
-        String emailakun = sharedPreferences.getString("email","");
-        getDataByUsername(username);
+        String email = sharedPreferences.getString("email","");
+        getDataByUsername(email);
 
         // Fetch data from the getPetaniByUsername endpoint using Volley
 
@@ -110,32 +106,29 @@ public class keranjang extends AppCompatActivity {
                 // Include data from the user's account
                 emailMessage += "\n\nData Pembeli:\n" +
                         "Username: " + username + "\n" +
-                        "Email: " + emailakun + "\n" +
-                        "No Hp: " + no_hp + "\n" +
-                        "Alamat: " + alamatt;
+                        "Email: " + email + "\n" +
+                        "No Hp: " + no_hp;
 
                 // Get the recipient email address
-                String recipientEmail = emailakun;
                 String phoneNumber = "6285779410576"; // Nomor WhatsApp yang akan dikirimkan pesan konfirmasi
                 String message = "Halo! Saya ingin melakukan konfirmasi pesanan dengan detail berikut:\n" + emailMessage;
+                Intent sendIntent = new Intent("android.intent.action.MAIN");
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, message);
+                sendIntent.putExtra("jid", phoneNumber + "@s.whatsapp.net"); // phone number without '+' and country code
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.whatsapp");
 
-                // Buat Intent untuk membuka WhatsApp
-                Intent whatsappIntent = new Intent(Intent.ACTION_VIEW);
-                whatsappIntent.setData(Uri.parse("http://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message));
-
-                // Periksa apakah WhatsApp terinstall pada perangkat
-                PackageManager packageManager = getPackageManager();
-                if (whatsappIntent.resolveActivity(packageManager) != null) {
-                    startActivity(whatsappIntent);
-                } else {
-                    // Jika WhatsApp tidak terinstall, tampilkan pesan
+                try {
+                    startActivity(sendIntent);
+                } catch (android.content.ActivityNotFoundException ex) {
                     Toast.makeText(keranjang.this, "WhatsApp tidak terinstall pada perangkat ini", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
-    private void getDataByUsername(String username) {
-        String urlEndPoints = "https://asia-south1.gcp.data.mongodb-api.com/app/application-0-fjrfb/endpoint/getPetaniByUsername?username=" + username;
+    private void getDataByUsername(String email) {
+        String urlEndPoints = "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-drzkm/endpoint/getUserByEmail?email=" + email;
 
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
@@ -153,14 +146,12 @@ public class keranjang extends AppCompatActivity {
                                 JSONObject userJson = userArray.getJSONObject(0); // Get the first object in the array
 
                                 // Check if the JSON response contains expected fields
-                                if (userJson.has("username")) {
+                                if (userJson.has("email")) {
                                     String retrievedUsername = userJson.getString("username");
-                                    String email = userJson.getString("email");
                                     String noHp = userJson.getString("no_hp");
-                                    String alamat = userJson.getString("alamat");
 
+                                    username = retrievedUsername;
                                     no_hp = noHp;
-                                    alamatt = alamat;
 
                                 } else {
                                     // Log an error if the expected fields are not present in the JSON response

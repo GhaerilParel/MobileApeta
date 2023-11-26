@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Mobile_Apeta"
         tools:targetApi="31">
         <activity
+            android:name=".chatbot"
+            android:exported="false" />
+        <activity
             android:name=".home"
             android:exported="false" />
         <activity
@@ -56,10 +59,10 @@
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".tampilan_awal"
+            android:name=".profil_user"
             android:exported="false" />
         <activity
-            android:name=".profil_user"
+            android:name=".tampilan_awal"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

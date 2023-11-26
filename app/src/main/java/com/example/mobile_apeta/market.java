@@ -1,5 +1,7 @@
 package com.example.mobile_apeta;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,7 +23,11 @@ import java.util.List;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log; // Tambahkan ini jika Anda menggunakan Log
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.android.volley.VolleyError; // Tambahkan ini jika Anda menggunakan VolleyError
 
@@ -41,6 +47,55 @@ public class market extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_market);
+        ImageButton btn_homebar = findViewById(R.id.homebar2);
+        ImageButton btn_mitrabar = findViewById(R.id.btn_mitra2);
+        ImageButton btn_marketbar = findViewById(R.id.btn_market2);
+        ImageButton btn_keranjangbar = findViewById(R.id.btn_keranjang2);
+        ImageButton btn_profilebar = findViewById(R.id.btn_profil2);
+
+        btn_homebar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(market.this, home.class);
+                startActivity(i);
+            }
+        });
+        btn_mitrabar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
+                if (sharedPreferences.getBoolean("isRegistered", false)) {
+                    // User is already registered, open profil_mitra directly
+                    Intent profileIntent = new Intent(market.this, profil_mitra.class);
+                    startActivity(profileIntent);
+                } else {
+                    // User is not registered, open admin_awal for registration
+                    Intent i2 = new Intent(market.this, admin_awal.class);
+                    startActivity(i2);
+                }
+            }
+        });
+        btn_marketbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i3 = new Intent(market.this, market.class);
+                startActivity(i3);
+            }
+        });
+        btn_keranjangbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i4 = new Intent(market.this, chatbot.class);
+                startActivity(i4);
+            }
+        });
+        btn_profilebar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i5 = new Intent(market.this, profil_user.class);
+                startActivity(i5);
+            }
+        });
 
         // Initialize RecyclerViews
         recyclerViewProductA = findViewById(R.id.ProductA);
@@ -63,6 +118,21 @@ public class market extends AppCompatActivity {
         recyclerViewProductA.setAdapter(adapterProductA);
         recyclerViewProductB.setAdapter(adapterProductB);
         fetchDataFromUrl();
+        adapterProductA.setOnItemClickListener(new ProdukAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(ProdukModels clickedProduk) {
+                showProductDetails(clickedProduk);
+            }
+        });
+
+        // Handle item click in RecyclerView B
+        adapterProductB.setOnItemClickListener(new ProdukAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(ProdukModels clickedProduk) {
+                showProductDetails(clickedProduk);
+            }
+        });
+
         searchProduk.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -79,7 +149,7 @@ public class market extends AppCompatActivity {
 
     private void fetchDataFromUrl() {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        String url = "https://asia-south1.gcp.data.mongodb-api.com/app/application-0-fjrfb/endpoint/getAllDataObat";
+        String url = "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-drzkm/endpoint/getAllProduk";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONArray>() {
@@ -137,6 +207,17 @@ public class market extends AppCompatActivity {
             }
         }
         adapterProductB.filterList(filteredListB);
+    }
+    private void showProductDetails(ProdukModels clickedProduk) {
+        Intent intent = new Intent(this, produk_details.class);
+        intent.putExtra("productId", clickedProduk.get_id());
+        intent.putExtra("productName", clickedProduk.getNama_produk());
+        intent.putExtra("productPrice", clickedProduk.getHarga_produk());
+        intent.putExtra("tokoName", clickedProduk.getNama_toko());
+        intent.putExtra("productDescription", clickedProduk.getDeskripsi_produk());
+        // Add any other data you want to pass
+
+        startActivity(intent);
     }
 
 }

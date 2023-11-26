@@ -34,10 +34,12 @@
                 android:iconifiedByDefault="false"
                 android:layout_marginLeft="15dp"
                 android:hint="Cari Apaan?"
+                android:padding="10dp"
                 android:queryBackground="@color/green"
                 android:background="@drawable/btn6"
                 android:layout_marginBottom="20dp"
-                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
                 />
 
             <LinearLayout
@@ -77,7 +79,7 @@
 
         <!-- Button 1 -->
         <ImageButton
-            android:id="@+id/button1"
+            android:id="@+id/homebar2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
@@ -86,7 +88,7 @@
 
         <!-- Button 2 -->
         <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/btn_mitra2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button1"
@@ -96,7 +98,7 @@
 
         <!-- Button 3 -->
         <ImageButton
-            android:id="@+id/button3"
+            android:id="@+id/btn_market2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button2"
@@ -106,7 +108,7 @@
 
         <!-- Button 4 -->
         <ImageButton
-            android:id="@+id/button4"
+            android:id="@+id/btn_keranjang2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button3"
@@ -116,13 +118,13 @@
 
         <!-- Button 5 -->
         <ImageButton
-            android:id="@+id/button5"
+            android:id="@+id/btn_profil2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/button4"
             android:layout_marginStart="44dp"
             android:layout_marginTop="13dp"
-            android:background="@drawable/profil" />
+            android:background="@drawable/profil"/>
 
     </LinearLayout>
 

@@ -41,12 +41,12 @@ public class login extends AppCompatActivity {
         signup = findViewById(R.id.keDaftar);
 
 //        // Check if the user is already logged in
-//        if (isLoggedIn()) {
-//            // If logged in, open the home activity
-//            Intent profileIntent = new Intent(login.this, home.class);
-//            startActivity(profileIntent);
-//            finish(); // Finish the login activity so the user can't go back to it
-//        }
+       if (isLoggedIn()) {
+            // If logged in, open the home activity
+            Intent profileIntent = new Intent(login.this, home.class);
+            startActivity(profileIntent);
+            finish(); // Finish the login activity so the user can't go back to it
+        }
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override

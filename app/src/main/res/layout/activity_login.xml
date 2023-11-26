@@ -107,6 +107,7 @@
         android:layout_height="36dp"
         android:background="@drawable/box3"
         android:hint="Password"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btnlogin"
         app:layout_constraintEnd_toEndOf="parent"

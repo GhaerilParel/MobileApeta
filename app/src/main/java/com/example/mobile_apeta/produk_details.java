@@ -23,8 +23,7 @@ public class produk_details extends AppCompatActivity {
 
 
         // Find views by their IDs
-        ImageView productImageView = findViewById(R.id.gambar);
-        TextView productNameTextView = findViewById(R.id.namaToko2);
+        TextView productNameTextView = findViewById(R.id.namaProduk2);
         TextView productPriceTextView = findViewById(R.id.hargaProduk2);
         EditText quantityEditText = findViewById(R.id.quantityEditText);
         TextView productDescriptionTextView = findViewById(R.id.deskripsiProduk2);
@@ -36,16 +35,14 @@ public class produk_details extends AppCompatActivity {
         String productId = intent.getStringExtra("productId");
         String productName = intent.getStringExtra("productName");
         int productPrice = intent.getIntExtra("productPrice", 0);
-        String productImage = intent.getStringExtra("productImage");
         String tokoName = intent.getStringExtra("tokoName");
         String productDescription = intent.getStringExtra("productDescription");
 
-        productDescription = productDescription.replace("<br>", "\n");
+       // productDescription = productDescription.replace("<br>", "\n");
 
         // Set data to views
         // Assuming you have a method to load an image from a URL, replace it with your implementation
-
-        productImageView.setImageDrawable(getDrawable(R.drawable.logo)); // Replace with actual image loading code
+        // Replace with actual image loading code
 
         productNameTextView.setText(productName);
         productPriceTextView.setText("Rp" + productPrice);

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatbot"
+    android:orientation="vertical"
+    android:background="@color/green">
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_marginTop="90dp"
+        android:layout_height="550dp"
+        android:background="@drawable/box2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ChatBot"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="27dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/btn_home"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/nama_buah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/tanaman_buah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/permasalahan_buah"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Solusi"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/green"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btn_diagnosis"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:fillViewport="true"
+                        android:background="@drawable/btn7"
+                        android:padding="15dp"
+                        >
+
+                        <!-- Other views above ScrollView -->
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/hasil_gpt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textIsSelectable="true" />
+                        </ScrollView>
+
+                        <!-- Other views below ScrollView, including RecyclerView -->
+
+                    </androidx.core.widget.NestedScrollView>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/btn8"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hasil jawaban diambil dari "
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OpenAI - GPT3.5"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rekomendasi Obat"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone"
+                    android:id="@+id/tv_rekomendasi_obat"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manual_bottom_navigation"
+        android:layout_width="362dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- Button 1 -->
+        <ImageButton
+            android:id="@+id/homebar5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/home" />
+
+        <!-- Button 2 -->
+        <ImageButton
+            android:id="@+id/btn_mitra5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button1"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/mitra2" />
+
+        <!-- Button 3 -->
+        <ImageButton
+            android:id="@+id/btn_market5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button2"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/baseline_table_chart_24" />
+
+        <!-- Button 4 -->
+        <ImageButton
+            android:id="@+id/btn_keranjang5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button3"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/baseline_shopping_cart_checkout_24" />
+
+        <!-- Button 5 -->
+        <ImageButton
+            android:id="@+id/btn_profil5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/button4"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/profil"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
